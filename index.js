@@ -6,6 +6,8 @@ function myAnimal() {
 }
 
 function yourAnimal() {
+  var yourAnimal = 'cat';
+  return yourAnimal;
   // The tests expect this function to return `animal` just like the previous function
   // However, you cannot simply modify the existing variable declared on line 1 in the global scope 
   // How can we make sure that this function
@@ -15,13 +17,12 @@ function yourAnimal() {
 }
 
 function add2(n) {
-  return n + two
-
-  // Feel free to move things around!
-  const two = 2
+  const two = 2;
+  var total = n + two;
+  return total;
 }
 
-var funkyFunction = function() {
+var funkyFunction = funkyFunction function() {
   return function() {
     return "FUNKY!"
   }
